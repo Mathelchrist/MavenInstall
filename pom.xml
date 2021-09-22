@@ -10,10 +10,25 @@
         <maven.compiler.plugin.version>3.8.1</maven.compiler.plugin.version>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
+        <project.build.sourceEncoding>KOI8-R</project.build.sourceEncoding>
     </properties>
 
     <build>
         <plugins>
+        <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        
+        <configuration>
+          <archive>
+            <manifest>
+              <addClasspath>true</addClasspath>
+              <mainClass>com.wildcodeschool.quest.maven.TestPid</mainClass>
+            </manifest>
+          </archive>
+        </configuration>
+        
+      </plugin>
         </plugins>
     </build>
 
@@ -22,7 +37,7 @@
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-text</artifactId>
             <version>1.9</version>
-        </dependency>
+    </dependency>
     </dependencies>
 
 </project>

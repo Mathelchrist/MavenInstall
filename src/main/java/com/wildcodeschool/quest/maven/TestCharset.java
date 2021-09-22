@@ -12,7 +12,7 @@ public class TestCharset {
 
     // Hint: this file was written after 1974 in the soviet union,
     // using another charset than UTF-8 (Linux/Mac) or CP1252 (Western Windows)
-    String trickyTextToDisplay = "Минск is Belarus capital...but can you read it?";
+    String trickyTextToDisplay = "О©╫О©╫О©╫О©╫О©╫ is Belarus capital...but can you read it?";
 
     /*
       On top of the issue at hand (compiling java code written using a non-western charset/text editor), we need to
